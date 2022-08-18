@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Konversi Nilai</title>
+</head>
+
+<body>
+    <h2>Konversi Nilai</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nilai</th>
+                <th>Keterangan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>93-100</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>83-92</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>75-82</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>50-74</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>0-49</td>
+                <td>E</td>
+            </tr>
+        </tbody>
+    </table>
+    <script language="JavaScript">
+        var nama = prompt("Masukkan Nama Siswa", "Nama Siswa")
+        document.write("Nama: " + nama + "<br>");
+        var nilai= prompt("Masukkan Nilai (0-100): ", 0)
+        var hasil=""
+        if (nilai > 100)
+        hasil= "ERROR"
+        else if(nilai >= 93)
+        hasil= "A"
+        else if (nilai >= 83)
+        hasil= "B"
+        else if(nilai >= 75)
+        hasil="C"
+        else if(nilai >= 50)
+        hasil="D"
+        else
+        hasil="E"
+        document.write("Hasil: "+ hasil)
+    </script>
+
+</body>
+
+</html>
